@@ -1,9 +1,9 @@
 ArduinoYUN_SMSText_PowerOutage
 ==============================
-
-  2014 Nate Miller
-    Send An SMS text message when power to a particular outlet is lost. 
     
+    2014 Nate Miller
+    
+    Send An SMS text message when power to a particular outlet is lost. 
     This is a rather odd sketch, but was constructed around an issue where we
     had two power sources in our building (one standard and one based off a backup generator). 
     We needed a means of identifying when one of these sources went off because important equipment 
