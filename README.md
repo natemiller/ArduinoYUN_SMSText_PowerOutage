@@ -11,12 +11,12 @@ ArduinoYUN_SMSText_PowerOutage
     detector would be great but I didn't have one of those, so in a pinch I decided instead to use 
     the loss of power to a device (in this case a nightlight) as a signal. 
     
-    This code currently assumes that the Arduino YUN is powered by the consistent power source and 
-    the light (in this case a nightlight) was plugged into the less reliable power source. When the 
-    power to the nightlight failed, the light would go out and this change would be detected by a simple 
-    photodiode and the Arduino YUN would send an SMS text relating the power outage (this also assumes
-    that the wireless router still has power doing this outage). When the power comes back
-    on, the light comes back on, and a second message is sent relating that information. 
+    This code utilizes an Arduino YUN and assumes that the YUN is powered by the consistent power source and 
+    the nightlight was plugged into the less reliable power source. When the power to the nightlight failed, 
+    the light would go out and this change would be detected by a photodiode and the Arduino YUN would 
+    send an SMS text relating the power outage (this also assumes that the wireless router still has power 
+    doing this outage). When the power returns, the light come on, and this change in state will be detected, 
+    resulting in a second SMS message being sent. 
     
     Who knows how broadly applicable this is, but it was very quick to write and did the job using simple
     electrical parts laying around the lab.
